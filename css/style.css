@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+tab.le, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input {
+    border: 1px solid #bbb;
+    height: 20px;
+    margin-right: 4px;
+
+}
+
+body {
+    font-family: Verdana;
+}
+
+.exercise-container {
+    padding: 10px;
+    position: relative;
+}
+
+.exercise-container h1 {
+
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #4654AB;
+}
+
+.exercise-container h2 {
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: #333333;
+    margin-top: 5px;
+}
+
+
+.exercise-container .task-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10px;
+
+}
+
+.exercise-container .labels {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 2%;
+    margin-top: 10px;
+    background: #e6eaee;
+    text-align: center;
+    word-wrap:break-word;
+}
+
+.exercise-container  .inputs-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 2%;
+    margin-top: 40px;
+
+
+}
+
+.image-container input {
+    width: 70%;
+}
+
+.inputs-container .input-container {
+    display: inline-block;
+    width: 30%;
+    font-size: 13px;
+    margin: 1.5%;
+}
+.inputs-container .input-container label {
+    display: inline-block;
+}
+.inputs-container .input-container input {
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.exercise-container .labels span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+
+}
+
+.task-container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.image-container label {
+    margin-right: 10px;
+}
+
+.image-container > div {
+    padding: 10px;
+}
+
+.example {
+    background: #e6eaee;
+}
+
+.image-container .task {
+    padding-top: 27px;
+}
+
+.image-container .example span {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.image-container {
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.rotated-image-container {
+    width: 30%;
+    display: inline-block;
+    margin-top: -25px;
+    position: relative;
+}
+
+.example2-container {
+    margin-top: 60px !important;
+    margin-bottom: 25px;
+}
+
+
+
+.rotated-image-container label {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    display: block;
+    background: white;
+    padding: 5px;
+}
+
+
+.rotated-image-container img {
+    width: 90%;
+    border: 5px solid white;
+    -webkit-box-shadow: -4px -3px 28px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: -4px -3px 28px -1px rgba(0,0,0,0.54);
+    box-shadow: -4px -3px 28px -1px rgba(0,0,0,0.54);
+
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 970px;
+    background: #f5f5f5;
+
+}
+
+.exercise-container {
+    min-height: 570px;
+}
+
+footer {
+    height: 40px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+.line {
+    width: 970px;
+    margin-top: 18.5px;
+    background-color: #2f9ec8;
+    height: 3px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+
+}
+
+
+.line-active {
+    width: 0px;
+    margin-top: 18.5px;
+    background-color: #4554ab;
+    height: 3px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+
+}
+
+footer > div {
+    width: 10000px;
+}
+
+footer > div:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer .exercises {
+    float:left;
+    position: relative;
+}
+
+.navigation, .exercises > div  {
+    width: 34px;
+    height: 34px;
+    background: white;
+    border: 3px solid  #2f9ec8;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    line-height: 34px;
+}
+
+.navigation:hover {
+    background-color: #4554ab;
+    border: none;
+}
+
+.navigation {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #2f9ec8;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    display: block;
+    outline: 0;
+}
+
+.nav-left {
+    background-image: url('../img/icons/arrow_left_white.png');
+    background-position: 12px center;
+}
+
+.nav-right {
+    background-position: 15px center;
+    background-image: url('../img/icons/arrow_right_white.png');
+}
+
+.exercises > div {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    line-height: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #2f9ec8;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s  linear;
+    -o-transition: all 0.2s  linear;
+    -ms-transition: all 0.2s  linear;
+    transition: all 0.2s  linear;
+}
+
+.nav-button-container {
+    margin-left: 60px;
+    margin-right: 60px;
+    float: left;
+}
+
+.exercises:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.nav-button-container:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.rounded, .exercises.rounded > div {
+    border-radius: 50%;
+}
+
+li > .exercise-list {
+    margin-left: 60px;
+}
+
+div.subexercise {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.exercise-active {
+    border: 3px solid  #4554ab;
+    color: #4554ab;
+
+}
+
+div.subexercise.exercise-active  {
+    background-color: #4554ab;
+}
+
+
+
+.rotated-image-container {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(20deg);
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.check-answers-button {
+    width: 50px;
+    height: 50px;
+    background-color: #2f9ec8;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-image: url('../img/icons/tick_white.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline: 0;
+    cursor: pointer;
+}
+
+.check-answers-button.refresh {
+    background-image: url('../img/icons/refresh_white.png');
+}
+
+
+.bad-answer .task, .input-container.bad-answer{
+    clear: both;
+    background-image: url('../img/icons/bad.png') !important;
+    background-repeat: no-repeat;
+    background-position: right 30px;
+}
+
+.input-container.bad-answer {
+    background-position: right 3px;
+}
+
+.good-answer .task, .input-container.good-answer{
+    clear: both;
+    background-image: url('../img/icons/good.png') !important;
+    background-repeat: no-repeat;
+    background-position: right 30px;
+}
+
+.input-container.good-answer {
+    background-position: right 3px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.pointer {
+    position: absolute;
+    background-image: url("../img/icons/marker.png");
+    width: 16px;
+    height: 21px;
+    margin-top: -15px;
+    -webkit-transition: margin-left 0.3s linear;
+    -moz-transition: margin-left 0.3s  linear;
+    -o-transition: margin-left 0.3s  linear;
+    -ms-transition: margin-left 0.3s  linear;
+    transition: margin-left 0.3s  linear;
+
+
+}
